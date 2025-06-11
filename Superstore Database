@@ -44,14 +44,13 @@ SELECT AVG(price)
 FROM superstore
 ;
 
--- First show a table of all items in the Kitchen Supplies category. 
+-- First show a table of all items in the Kitchen Supplies category. Then calculate the average price of items in the Kitchen Supplies category.
 SELECT item_name
 , category
 , price
 FROM superstore
 WHERE category='Kitchen Supplies'
 ;
--- Then calculate the average price of items in the Kitchen Supplies category
 SELECT AVG(price)
 FROM superstore
 WHERE category='Kitchen Supplies'
